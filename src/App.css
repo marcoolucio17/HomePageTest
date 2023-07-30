@@ -1,38 +1,100 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f5b754;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  color: rgb(255, 255, 255);
+  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: light;
+  text-align: start;
+}
+
+.nav-link:hover {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.navbar-nav-scroll {
+  overflow: visible;
+}
+
+.navbar-toggler {
+  border-color: #f5b754c8;
+  background-color: #f5b754c8;
+}
+
+.navbar-bar {
+  background-color: #f5b75471;
+}
+
+.home {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 0px;
+  font-size: calc(8px + 2vmin);
+}
+
+.customcontainer {
+  margin-top: 80px;
+  margin-left: 14px;
+  margin-right: 10%;
+  font-size: calc(8px + 2vmin);
+}
+
+.custombtngroup {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: calc(8px + 2vmin);
+}
+
+.btn {
+  background-color: #ee9c18;
+  color: black;
+  padding: 10px 20px;
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ee9c18;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
