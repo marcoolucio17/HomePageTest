@@ -16,7 +16,9 @@
   border-color: black;
 }
 
-
+.html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
   color: rgb(255, 255, 255);
@@ -152,6 +154,7 @@
 }
 
 .intro {
+  
   font-size: 24px;
   font-family: Georgia, serif;
   margin-top: 250px;
