@@ -1,55 +1,100 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Nav, Button, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const handleOffcanvasClose = () => setShowOffcanvas(false);
+  const handleOffcanvasToggle = () => setShowOffcanvas((prev) => !prev);
+
   return (
-    <Navbar expand="sm" className="p-2">
-      <div className="container">
-        <Navbar.Brand href="#">
-            <Link to="/" className="navbar-brand">
-                OrdenDigital.
+    <>
+      <Navbar expand="lg" className="">
+        <div className="container">
+          <Navbar.Brand>
+            <Link to="/" className="navbar-brand mybtn">
+              OrdenDigital.
             </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        </Navbar.Toggle>
-        <Navbar.Collapse id="navbarNavAltMarkup">
-          <Nav>
-              <Nav.Link href="#" className="active">
-                <Link to="/about" className="nav-link">
-                  productos
+          </Navbar.Brand>
+
+          {/* Show the toggler only on smaller screens */}
+          <a
+            variant="outline-primary"
+            aria-controls="offcanvasMenu"
+            onClick={handleOffcanvasToggle}
+            className="d-lg-none mybtn" // Hide on screens larger than lg (large)
+          >
+            <span className="navbar-toggler-icon"></span>
+          </a>
+
+          {/* Show the full navigation bar on larger screens */}
+          <Navbar.Collapse id="navbarNavAltMarkup" className="justify-content-end">
+            <Nav>
+                <Link to="/about" className="nav-link mx-3">
+                  Quiénes somos
                 </Link>
-              </Nav.Link>
-              <Nav.Link href="#">
-                <Link to="/contact" className="nav-link">
-                  servicios
+                
+                <Link to="/contact" className="nav-link mx-3">
+                  Servicios
                 </Link>
-              </Nav.Link>
-              <Nav.Link href="#">
-                <Link to="/contact" className="nav-link">
-                  precios
+                
+                <Link to="/contact" className="nav-link mx-3">
+                  Precios
                 </Link>
-              </Nav.Link>
-          </Nav>
-          <Nav className="mr-auto">
-            <Nav.Link href="#">
-              <Link to="/login" className="nav-link">
-                Iniciar sesión
-              </Link>
-            </Nav.Link>
-            <Nav.Link href="#">
-              <Link to="/signup" className="nav-link">
-                Registrarse
-              </Link>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </div>
-    </Navbar>
+                
+                <Link to="/login" className="nav-link mx-3">
+                  Iniciar sesión
+                </Link>
+                
+                <Link to="/signup" className="nav-link mx-3">
+                  Registro
+                </Link>
+
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
+
+      <hr className="my-1"/>
+
+      <Offcanvas
+        show={showOffcanvas}
+        onHide={handleOffcanvasClose}
+        placement="end"
+        target="offcanvasMenu"
+        className="Offcanvas"
+        style={{ backgroundColor: "#f5b754" }}
+      >
+        <Offcanvas.Header className="m-2"closeButton style={{ backgroundColor: "#f5b754" }}>
+          <Offcanvas.Title>Menú</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body style={{ backgroundColor: "#f5b754" }}>
+          <div className="container p-2">
+            <Link to="/about" className="nav-link" onClick={handleOffcanvasClose}>
+              Productos
+            </Link>
+            <Link to="/contact" className="nav-link my-3 " onClick={handleOffcanvasClose}>
+              Servicios
+            </Link>
+            <Link to="/contact" className="nav-link my-3" onClick={handleOffcanvasClose}>
+              Precios
+            </Link>
+          </div>
+
+          <hr className="my-3"/>
+
+          <div className="container p-2">
+          <Link to="/login" className="nav-link my-3" onClick={handleOffcanvasClose}>
+              Iniciar sesión
+            </Link>
+            <Link to="/signup" className="nav-link my-3" onClick={handleOffcanvasClose}>
+              Registro
+            </Link>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
 };
 
