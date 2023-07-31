@@ -1,0 +1,18 @@
+
+.page-body {
+  margin-top: 60px;
+  font-family: Georgia, serif;
+}
+
+.mycontainermargin {
+  margin-top: 50px;
+}
+
+.about-text {
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: Georgia, serif;
+  line-height: 2;
+  text-align: justify;
+}
+

@@ -1,11 +1,22 @@
 .App {
   text-align: center;
-  background-color: #f5b754;
+  background-color: #fbd392;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.hometitle {
+  font-size: 40px;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  color: #ee9c18;
+  font-weight: bolder;
+  border-color: black;
+}
+
+
 
 .navbar {
   color: rgb(255, 255, 255);
@@ -14,39 +25,56 @@
   border-radius: 25px;
   width: 100%;
   height: 100%;
+  font-family: Georgia, serif;
 }
 
 .nav-link {
   color: rgb(0, 0, 0);
   font-size: 15px;
-  font-weight: light;
+  padding: 8px 15px;
   text-align: start;
+  font-family: Georgia, serif;/* Add a transparent border to create space for the hover effect */
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-link:hover {
-  font-size: 15px;
-  font-weight: bold;
-  text-align: start;
+  transform: translateY(-5px);
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ee9c18;
+  padding: 10px 20px;
+  color: black; /* Update the border color to show the hover effect */
 }
 
-.navbar-nav-scroll {
-  overflow: visible;
+.nav-link:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
-.navbar-toggler {
-  border-color: #f5b754c8;
-  background-color: #f5b754c8;
+.nav-link:hover:after {
+  opacity: 0.1;
 }
 
-.navbar-bar {
-  background-color: #f5b75471;
+.mybtn {
+  color: black;
+  padding: 5px 20px;
+  border-color: black;
+  border-radius: 30px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.mybtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ee9c18;
 }
 
 .home {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 0px;
+  margin: 20px;
   font-size: calc(8px + 2vmin);
+  font-family: Georgia, serif;
 }
 
 .customcontainer {
@@ -97,4 +125,37 @@
   background-color: black;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+.nav-link:hover:after {
+  opacity: 0.1;
+}
+
+.hometable-header {
+  font-size: calc(8px + 2vmin);
+  font-family: Georgia, serif;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background-color: antiquewhite;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.hometable {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  margin-top: 50px;
+  background-color: antiquewhite;
+  border-radius: 25px;
+  text-align: start;
+}
+
+.intro {
+  font-size: 24px;
+  font-family: Georgia, serif;
+  margin-top: 250px;
+  margin-bottom: 300px;
+  text-align: justify;
+  display: block;
 }
