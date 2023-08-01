@@ -13,19 +13,19 @@ function Home() {
     <div className="home">
       <div className="container">
         <div className="row align-items-center">
-          <div className="intro text-start col-7">
+          <div className="intro text-start col-8">
             <p className="h2">
-              <p className="hometitle">Orden Digital</p>
+              <p className="hometitle">Orden Digital.</p>
               la plataforma que te permite gestionar fácilmente tus pedidos de forma digital.
             </p>
             <div className="">
               <div className="row">
-                <div className="col-4">
+                <div className="col-7">
                   <Link
                     to="intro-cards-section" // This should match the ID of the section you want to scroll to
                     spy={true}
                     smooth={true}
-                    offset={-300}// Adjust the offset to compensate for fixed header height, if any
+                    offset={-220}// Adjust the offset to compensate for fixed header height, if any
                     duration={5} // Adjust the duration of the scroll animation
                   >
                     <button

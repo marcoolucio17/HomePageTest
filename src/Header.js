@@ -48,7 +48,7 @@ const Header = () => {
                 </Link>
                 
                 <Link to="/signup" className="nav-link mx-3">
-                  Registro
+                  Regístrate
                 </Link>
 
             </Nav>
@@ -72,7 +72,7 @@ const Header = () => {
         <Offcanvas.Body style={{ backgroundColor: "#f5b754" }}>
           <div className="container p-2">
             <Link to="/about" className="nav-link" onClick={handleOffcanvasClose}>
-              Productos
+              Quiénes somos
             </Link>
             <Link to="/contact" className="nav-link my-3 " onClick={handleOffcanvasClose}>
               Servicios
@@ -89,7 +89,7 @@ const Header = () => {
               Iniciar sesión
             </Link>
             <Link to="/signup" className="nav-link my-3" onClick={handleOffcanvasClose}>
-              Registro
+              Regístrate
             </Link>
           </div>
         </Offcanvas.Body>
