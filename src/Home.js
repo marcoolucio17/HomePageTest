@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import IntroCards from "./IntroCards";
-import myImage from "./analitica.png";
-import myImage2 from "./objetivo.png";
-import myImage3 from "./base-de-datos.png";
-import myImage4 from "./Asset 2.png";
 import "./App.css";
 
 function Home() {
@@ -18,9 +14,6 @@ function Home() {
               <p className="hometitle">Orden Digital.</p>
               la plataforma que te permite gestionar fácilmente tus pedidos de forma digital.
             </p>
-            <div className="">
-              <div className="row">
-                <div className="col-7">
                   <Link
                     to="intro-cards-section" // This should match the ID of the section you want to scroll to
                     spy={true}
@@ -35,14 +28,13 @@ function Home() {
                       Conoce más
                     </button>
                   </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      <IntroCards />
+      <div className="card-section">
+        <IntroCards />
+      </div>
     </div>
   );
 }

@@ -5,20 +5,14 @@ import "./styles.css";
 const ICards = ({title, text}) => {
 
     return (
-      <div className="card text-start">
-        <div
-          className="container"
-        >
-          <div className="card-body">
+      <div className="text-start py-3">
             <h5 className="card-title">{title}</h5>
-            <p className="about-text">
+            <p className="about-text my-5">
                 {text}
             </p>
             <button className="mybtn2">
                 Conoce más sobre {title}
             </button>
-          </div>
-        </div>
       </div>
     );
     };
