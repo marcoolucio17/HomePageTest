@@ -56,8 +56,6 @@ const Header = () => {
         </div>
       </Navbar>
 
-      <hr className="my-1"/>
-
       <Offcanvas
         show={showOffcanvas}
         onHide={handleOffcanvasClose}
@@ -82,7 +80,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <hr className="my-3"/>
+          <hr className="m-2"/>
 
           <div className="container p-2">
           <Link to="/login" className="nav-link my-3" onClick={handleOffcanvasClose}>

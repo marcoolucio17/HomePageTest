@@ -18,12 +18,12 @@ function Home() {
                     to="intro-cards-section" // This should match the ID of the section you want to scroll to
                     spy={true}
                     smooth={true}
-                    offset={-220}// Adjust the offset to compensate for fixed header height, if any
+                    offset={-200}// Adjust the offset to compensate for fixed header height, if any
                     duration={5} // Adjust the duration of the scroll animation
                   >
                     <button
                       type="button"
-                      className="btn btn-lg fw-bold rounded-5 border-black"
+                      className="mybtn2 btn-lg fw-bold rounded-5 border-black"
                     >
                       Conoce más
                     </button>

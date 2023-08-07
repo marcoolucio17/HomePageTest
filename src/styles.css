@@ -14,7 +14,6 @@
   font-family: Georgia, serif;
   line-height: 2;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 .cards {
@@ -23,17 +22,15 @@
 }
 
 .card-section {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
-
 
 .card-title {
   font-size: 35px;
-  font-weight: bold;
   font-family: Georgia, serif;
   color: #000000;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .mybtn2 {
@@ -47,6 +44,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
+  justify-content: center;
 }
 
 .mybtn2:active{
@@ -55,6 +53,61 @@
 }
 
 .mybtn2:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ee9c18;
+}
+
+.newbackground {
+  background-color: white;
+}
+
+.newbackground2 {
+  background-color: #ffe4b6;
+}
+
+.newbackground3 {
+  background-color: white;
+}
+
+.introtext {
+  font-size: 56px;
+  font-family: Georgia, serif;
+  color: #000000;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btncont {
+  margin-top: 120px;
+  margin-bottom: 130px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.introbutton {
+  background-color: papayawhip;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  border-radius: 35px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.introbutton:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.introbutton:hover{
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background-color: #ee9c18;

@@ -2,17 +2,18 @@ import React from "react";
 import { motion } from "framer-motion"; 
 import "./styles.css";
 
-const ICards = ({title, text}) => {
+const ICards = ({title, text, image}) => {
 
     return (
-      <div className="text-start py-3">
-            <h5 className="card-title">{title}</h5>
-            <p className="about-text my-5">
+      <div className="text-start container introcards p-3">
+            <p className="introtext">
                 {text}
             </p>
-            <button className="mybtn2">
-                Conoce más sobre {title}
-            </button>
+            <div className="text-center btncont">
+                <button className="introbutton">
+                    Conoce más sobre {title}
+                </button>
+            </div>
       </div>
     );
     };
