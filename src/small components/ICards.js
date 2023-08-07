@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion"; 
-import "./styles.css";
+import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/styles.css";
 
-const ICards = ({title, text, image}) => {
+const ICards = ({title, text}) => {
 
     return (
       <div className="text-start container introcards p-3">

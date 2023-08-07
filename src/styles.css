@@ -78,6 +78,7 @@
   margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
 }
 
 .btncont {
@@ -88,7 +89,7 @@
 }
 
 .introbutton {
-  background-color: papayawhip;
+  background-color: #ee9c18;
   color: #000000;
   font-size: 20px;
   font-weight: bold;

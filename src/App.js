@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "framer-motion";
-import Header from './Header';
-import Home from './Home';
-import About from './About';
+import Header from './big components/Header';
+import Home from './big components/Home';
+import About from './big components/About';
 
 import './App.css';
 

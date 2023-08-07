@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import IntroCards from "./IntroCards";
-import "./App.css";
+import IntroCards from "../mid components/IntroCards";
+import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/App.js";
 
 function Home() {
   return (

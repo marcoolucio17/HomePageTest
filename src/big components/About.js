@@ -1,7 +1,7 @@
 // About.js
 
 import React from 'react';
-import "./styles.css"
+import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/styles.css"
 
 const About = () => {
     return (
