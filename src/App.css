@@ -3,6 +3,11 @@
   background-color: #ffd793;
 }
 
+.servicesheader {
+  background-color: dimgrey;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
