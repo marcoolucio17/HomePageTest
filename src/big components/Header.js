@@ -35,7 +35,7 @@ const Header = () => {
                   Quiénes somos
                 </Link>
                 
-                <Link to="/contact" className="nav-link mx-3">
+                <Link to="/services" className="nav-link mx-3">
                   Servicios
                 </Link>
                 
@@ -72,7 +72,7 @@ const Header = () => {
             <Link to="/about" className="nav-link" onClick={handleOffcanvasClose}>
               Quiénes somos
             </Link>
-            <Link to="/contact" className="nav-link my-3 " onClick={handleOffcanvasClose}>
+            <Link to="/services" className="nav-link my-3 " onClick={handleOffcanvasClose}>
               Servicios
             </Link>
             <Link to="/contact" className="nav-link my-3" onClick={handleOffcanvasClose}>

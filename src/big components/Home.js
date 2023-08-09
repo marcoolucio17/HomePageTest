@@ -2,15 +2,24 @@ import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import IntroCards from "../mid components/IntroCards";
-import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/App.js";
+import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/App.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="container">
         <div className="row align-items-center">
+          <motion.div
+            id = "home-section"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.7 }}
+          >
+
           <div className="intro text-start col-8">
             <p className="h2">
+
+              
               <p className="hometitle">Orden Digital.</p>
               la plataforma que te permite gestionar fácilmente tus pedidos de forma digital.
             </p>
@@ -23,12 +32,14 @@ function Home() {
                   >
                     <button
                       type="button"
-                      className="mybtn2 btn-lg fw-bold rounded-5 border-black"
+                      className="btn btn-lg fw-bold rounded-5 border-black"
                     >
                       Conoce más
                     </button>
                   </Link>
+
           </div>
+          </motion.div>
         </div>
       </div>
 

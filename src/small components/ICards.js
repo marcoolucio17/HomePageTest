@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; 
+import { Link } from "react-scroll";
 import "/Users/marcoluciososa/Documents/ReactApps/home-1/src/styles.css";
 
 const ICards = ({title, text}) => {
@@ -11,7 +12,7 @@ const ICards = ({title, text}) => {
             </p>
             <div className="text-center btncont">
                 <button className="introbutton">
-                    Conoce más sobre {title}
+                    Conoce más sobre {title} con OrdenDigital
                 </button>
             </div>
       </div>
