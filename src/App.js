@@ -5,6 +5,7 @@ import Header from './big components/Header';
 import Home from './big components/Home';
 import About from './big components/About';
 import Services from './big components/Services';
+import Auto from "./mid components/Auto"
 
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/auto" element={<Auto />} />
       </Routes>
 
       </div>

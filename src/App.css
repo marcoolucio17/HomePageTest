@@ -3,6 +3,10 @@
   background-color: #ffd793;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .servicesheader {
   background-color: dimgrey;
   color: white;

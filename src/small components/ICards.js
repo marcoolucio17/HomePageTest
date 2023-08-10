@@ -12,7 +12,7 @@ const ICards = ({title, text}) => {
             </p>
             <div className="text-center btncont">
                 <button className="introbutton">
-                    Conoce más sobre {title} con OrdenDigital
+                    Conoce más sobre {title}
                 </button>
             </div>
       </div>
